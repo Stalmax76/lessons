@@ -1,13 +1,19 @@
 @import url("reset.css");
 
+body {
+   height: 100%;
+}
+[class*="city-"] {
+   color: chocolate;
+}
+h1 {
+   color: #ffa07a;
+}
 h2 {
-   font-size: 36px;
-   font-weight: 600;
-   line-height: 1.5;
+   color: #642b14;
 }
 .header-title {
    color: green;
-   font-size: 60px;
 }
 .menu-item > a {
    color: burlywood;
@@ -15,7 +21,6 @@ h2 {
 }
 
 .sub-menu-item a {
-   font-size: 22px;
    color: blue;
 }
 a {
@@ -26,4 +31,8 @@ a {
 }
 .sport strong {
    color: darkgreen;
+}
+
+footer {
+   color: red;
 }
