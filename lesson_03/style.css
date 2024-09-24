@@ -1,0 +1,38 @@
+@import url("reset.css");
+
+body {
+   height: 100%;
+}
+[class*="city-"] {
+   color: chocolate;
+}
+h1 {
+   color: #ffa07a;
+}
+h2 {
+   color: #642b14;
+}
+.header-title {
+   color: green;
+}
+.menu-item > a {
+   color: burlywood;
+   font-size: 24px;
+}
+
+.sub-menu-item a {
+   color: blue;
+}
+a {
+   cursor: pointer;
+}
+* > p a {
+   color: blue;
+}
+.sport strong {
+   color: darkgreen;
+}
+
+footer {
+   color: red;
+}
