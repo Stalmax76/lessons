@@ -1,0 +1,287 @@
+@import "reset.css";
+@import "fonts.css";
+
+body {
+   font-family: "DM Sans", Arial, Helvetica, sans-serif;
+   background-color: lightgray;
+   color: #1e1b39;
+   box-sizing: border-box;
+}
+[class*="-container"] {
+   max-width: 1740px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+header {
+   padding-block: 15px;
+}
+header h1 {
+   font-weight: 700;
+   font-size: 88px;
+   line-height: 1.08; /* 95/88 */
+   text-align: center;
+}
+
+/* =========================== Task 1 =============================== */
+
+.task-one {
+   padding-block: 106px;
+   background-color: #fff;
+}
+
+.task-one-item {
+   display: inline-block;
+
+   vertical-align: middle;
+}
+
+/* presentation */
+.presentation {
+   font-size: 0;
+   max-width: 676px;
+   text-align-last: left;
+   margin-right: 140px;
+}
+.presentation-img {
+   width: 88px;
+   height: 95px;
+   margin-block-end: 28px;
+}
+.presentation-img img {
+   width: 100%;
+   height: 100%;
+}
+.presentation-title {
+   font-size: 88px;
+   font-weight: 700;
+   line-height: 1.08;
+   margin-block-end: 20px;
+}
+.presentation-text {
+   color: #6e6c83;
+   font-size: 24px;
+   line-height: 1.75; /* 42/24 */
+}
+.presentation-text > *:not(:last-child) {
+   margin-bottom: 20px;
+}
+/* ========= content ============= */
+
+.content-list {
+   font-size: 0;
+}
+
+.content-list > *:not(:last-child) {
+   margin-bottom: 54px;
+}
+.content-item-counter {
+   display: inline-block;
+   vertical-align: middle;
+   color: #4a3aff;
+   font-size: 88px;
+   font-weight: 700;
+   line-height: 1.07;
+   background-color: rgba(74, 58, 255, 0.1);
+   padding: 61.5px;
+   border-radius: 50%;
+   text-align: center;
+   max-width: 218px;
+   margin-right: 40px;
+}
+
+.content-item-body {
+   display: inline-block;
+   vertical-align: middle;
+   max-width: 630px;
+   padding-left: 20px;
+}
+
+.content-item-body > :not(:last-child) {
+   margin-bottom: 8px;
+}
+
+.content-item-lable {
+   color: #4a3aff;
+   font-size: 20px;
+   font-weight: 700;
+}
+.content-item-title {
+   font-size: 42px;
+   font-weight: 700;
+   line-height: 1.28; /* 54/42 */
+}
+.content-item-text {
+   max-width: 630px;
+   color: #6e6c83;
+   font-size: 24px;
+   line-height: 1.75;
+}
+
+/* =========================== Task 2 =============================== */
+.task-two {
+   padding-block: 106px;
+   background-color: #fff;
+   box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.25);
+}
+.task-two-title {
+   font-size: 88px;
+   font-weight: 700;
+   line-height: 1.08;
+   margin-block-end: 50px;
+}
+
+.task-two-items > :not(:last-child) {
+   margin-inline-end: 38px;
+}
+.task-two-item {
+   min-width: 541px;
+   display: inline-block;
+   padding-inline: 24px;
+   padding-block-start: 24px;
+}
+.item-task-two-header {
+   margin-block-end: 34px;
+   background-color: #4a3aff;
+   max-width: 100%;
+   text-align: center;
+   padding-block: 44.59px;
+   color: #fff;
+   border-radius: 34px;
+}
+.item-task-two-header-title {
+   font-size: 30px;
+   font-weight: 700;
+   line-height: 1.07;
+   margin-block-end: 2px;
+}
+.item-task-two-header-price {
+   font-size: 116px;
+   font-weight: 700;
+   line-height: 1.03;
+   margin-block-end: 6px;
+}
+.item-task-two-header-subtitle {
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 1.1;
+}
+
+.item-task-two-list > :not(:last-child) {
+   margin-block-end: 26px;
+}
+
+.item-task-two-list li {
+   font-size: 28px;
+   font-weight: 700;
+   line-height: 1.35;
+}
+
+.item-task-two-list li::before {
+   content: "";
+   display: inline-block;
+   background: url("../img/task-two/Check Circle.png") 0 0 / 36px no-repeat;
+   width: 36px;
+   height: 36px;
+   vertical-align: middle;
+   margin-inline-end: 14px;
+}
+/* =========================== Task 3 =============================== */
+
+.task-three {
+   background-color: #fdf0e9;
+   padding-block: 68px;
+   font-family: Epilogue, Arial, Helvetica, sans-serif;
+}
+.task-three-image {
+   max-width: 970px;
+   margin-inline: auto;
+   margin-block-end: 74px;
+}
+.task-three-image img {
+   width: 100%;
+}
+
+.task-three-container {
+   max-width: 570px;
+}
+.task-three-header {
+   margin-block-end: 51px;
+}
+.task-three-header-title {
+   color: #391400;
+   font-size: 20px;
+   line-height: 1.6;
+   margin-block-end: 32px;
+}
+.text {
+   color: #391400a3;
+   font-size: 16px;
+   line-height: 2;
+}
+.item-task-three {
+   font-size: 0;
+   margin-block-end: 65px;
+}
+.item-task-three-title {
+   color: #391400;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 1.33;
+   margin-block-end: 35px;
+}
+.item-task-three-text p {
+   margin-block-end: 28px;
+}
+
+.unordered-list {
+   margin-block-start: 6px;
+   margin-block-end: 32px;
+}
+.unordered-list li {
+   position: relative;
+   padding-left: 16px;
+}
+.unordered-list li::before {
+   display: block;
+   position: absolute;
+   content: "";
+   top: 10px;
+   left: 0;
+   width: 8px;
+   height: 8px;
+   background-color: #ef6d58;
+   border-radius: 50%;
+}
+.item-task-three-list {
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 2;
+}
+.ordered-list {
+   margin-block-end: 32px;
+}
+.ordered-list li {
+   margin-inline-start: 18px;
+}
+#article {
+   font-size: 20px;
+   line-height: 1.6;
+   background-color: #f9e5da;
+   padding: 42px 32px 32px 32px;
+}
+
+#article::before {
+   display: inline-block;
+   content: "";
+   background: url(../img/task-three/02.png) left / 36px no-repeat;
+   width: 48px;
+   height: 36px;
+}
+
+.footer {
+   text-align: center;
+   padding-block: 34px;
+}
+.footer > * :not(:last-child) {
+   margin-block-end: 10px;
+}
