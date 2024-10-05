@@ -106,7 +106,7 @@ body {
 .task-two-content {
    min-height: 550px;
    font-size: 0;
-   background: no-repeat right center/ 529px url("/img/task-two/all_01.png");
+   background: no-repeat right center/ 529px url("../img/task-two/all_01.png");
 }
 .content-item {
    font-size: 18px;
