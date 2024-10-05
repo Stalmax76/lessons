@@ -264,10 +264,17 @@ header h1 {
    margin-inline-start: 18px;
 }
 #article {
+   max-width: 100%;
+
+   background-color: #f9e5da;
+   padding: 32px;
+   margin-block-end: 76px;
+}
+#article span {
+   display: inline-block;
+   max-width: 81%;
    font-size: 20px;
    line-height: 1.6;
-   background-color: #f9e5da;
-   padding: 42px 32px 32px 32px;
 }
 
 #article::before {
@@ -276,6 +283,8 @@ header h1 {
    background: url(../img/task-three/02.png) left / 36px no-repeat;
    width: 48px;
    height: 36px;
+   vertical-align: top;
+   margin-inline-end: 30px;
 }
 
 .footer {
