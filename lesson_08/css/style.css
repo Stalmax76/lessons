@@ -131,7 +131,6 @@ a span:hover {
 .logo-icons-item {
    display: inline-block;
    margin-inline: 45px;
-   vertical-align: middle;
    height: 32px;
 }
 .logo-icons-item > img {
