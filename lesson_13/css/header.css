@@ -1,0 +1,30 @@
+.header {
+   padding-block: 15px;
+   position: fixed;
+   left: 0;
+   right: 0;
+   background: linear-gradient(
+      42deg,
+      rgba(81, 50, 147, 0.34217436974789917) 14%,
+      rgba(50, 87, 121, 1) 41%,
+      rgba(111, 130, 82, 0.7455357142857143) 80%,
+      rgba(10, 82, 232, 0.25986078886310904) 95%
+   );
+   border: 2px solid rgba(255, 0, 0, 0.2);
+   border-top: none;
+   border-radius: 6px;
+   box-shadow: 1px 1px 5px rgba(219, 217, 217, 0.2);
+   opacity: 0.5;
+   z-index: 10;
+   backdrop-filter: blur(10px);
+}
+.heafer__container {
+   text-align: center;
+}
+
+.header__title {
+   text-align: center;
+   z-index: 10;
+   animation: slideIn 4s ease-in-out forwards;
+   animation-delay: 0.8s;
+}
