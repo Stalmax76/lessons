@@ -1,0 +1,44 @@
+/* FOUNDER */
+.founder {
+   padding-block: 90px 93px;
+}
+.founder__container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* flex-wrap: wrap; */
+}
+
+.founder__image {
+   flex-basis: 570px;
+}
+.founder__image img {
+   object-fit: cover;
+   border-radius: 8px;
+   max-width: 100%;
+}
+
+.founder__content {
+   position: relative;
+   flex-basis: 470px;
+   padding-block: 44px;
+   background: url("../img/founder/shape.svg") 83% 40px / 21.2% no-repeat;
+}
+.founder__header .page-header__lable {
+   margin-block-end: 33px;
+}
+.founder__header .page-header__title {
+   margin-block-end: 44px;
+   font-size: 40px;
+   font-weight: 800;
+   line-height: 1.2;
+}
+.founder__name {
+   font-size: 20px;
+   line-height: 1.6;
+   margin-block-end: 6px;
+}
+.founder__position {
+   color: rgba(255, 255, 255, 0.64);
+   line-height: 1.7;
+}
