@@ -1,0 +1,26 @@
+@import "reset.css";
+@import "fonts.css";
+@import "header.css";
+@import "discuss.css";
+@import "streem.css";
+@import "footer.css";
+body {
+   font-family: "Work Sans", "Times New Roman", serif;
+   font-weight: 400;
+   font-size: 18px;
+   color: #87909d;
+}
+
+[class*="__container"] {
+   max-width: 1350px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.wrapper {
+   height: 100vw;
+   overflow: clip;
+   background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+   font-size: 18px;
+   background-color: #fff;
+}
