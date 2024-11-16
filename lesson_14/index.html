@@ -162,7 +162,7 @@
                   <input id="subject" type="text" placeholder="Subject*" required tabindex="5">
                 </div>
                 <div class="form__input">
-                  <textarea id="message" placeholder="Message*" required tabindex="6"></textarea>
+                  <textarea rows="2" id="message" placeholder="Message*" required tabindex="6"></textarea>
 
                 </div>
               </div>
@@ -185,32 +185,34 @@
               <div class="form-streem__inputs">
                 <div class="form-streem__input input-item">
                   <label for="first-name">First Name</label>
-                  <input type="text" id="first-name" name="first-name" placeholder="Enter First Name" tabindex="1">
+                  <input type="text" id="first-name" name="first-name" placeholder="Enter First Name">
                 </div>
                 <div class="form-streem__input input-item">
                   <label for="last-name">First Name</label>
-                  <input type="text" id="last-name" name="last-name" placeholder="Enter Last Name" tabindex="2">
+                  <input type="text" id="last-name" name="last-name" placeholder="Enter Last Name">
                 </div>
                 <div class="form-streem__input input-item">
                   <label for="streem-email">Email</label>
-                  <input type="email" id="streem-email" name="streem-email" placeholder="Enter your Email" tabindex="3">
+                  <input type="email" id="streem-email" name="streem-email" placeholder="Enter your Email">
                 </div>
                 <div class="form-streem__input input-item">
                   <label for="phone">Phone Number</label>
-                  <input type="tel" id="phone" name="phone" placeholder="Enter your Phone Number" tabindex="4">
+                  <input type="tel" id="phone" name="phone" placeholder="Enter your Phone Number">
                 </div>
               </div>
               <div class="form-streem__input-textarea ">
                 <label for="streem-message">Message</label>
-                <textarea id="streem-message" name="streem-message" placeholder="Enter your Message"
-                  tabindex="5"></textarea>
+                <textarea rows="5" id="streem-message" name="streem-message"
+                  placeholder="Enter your Message"></textarea>
               </div>
               <div class="form-streem__footer">
-                <label class="form-streem__checkbox checkbox">
+                <div class="form-streem__checkbox checkbox">
                   <input type="checkbox" name="checkbox" id="checkbox" required>
                   <span class="checkbox__checkmark"></span>
-                  I agree with Terms of Use and Privacy Policy
-                </label>
+                  <label class=" checkbox__lable" for="checkbox">
+                    I agree with Terms of Use and Privacy Policy
+                  </label>
+                </div>
                 <button type="submit" class="form-streem__button">Send Message</button>
               </div>
             </form>

@@ -141,6 +141,11 @@
    padding-bottom: 14px;
    border-bottom: 1.5px solid #e6e8eb;
 }
+.form__input textarea {
+   min-height: 18px;
+
+   border-radius: 6px;
+}
 .form__input--short input {
    padding-bottom: 14px;
    border-bottom: 1.5px solid #e6e8eb;
@@ -166,7 +171,6 @@ input:focus::placeholder {
 .form__input textarea:focus {
    display: inline-block;
    outline: none;
-   padding-block: 5px;
    border-radius: 6px;
    border-bottom: 1.5px solid #a53dff;
    resize: vertical;

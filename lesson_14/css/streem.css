@@ -28,12 +28,13 @@
 .form-streem__input {
    display: flex;
    flex-direction: column;
+   flex-basis: 450px;
+
    gap: 16px;
    flex-grow: 1;
    width: fit-content;
 }
 .form-streem__input input {
-   width: 413px;
    display: flex;
    align-items: center;
    padding: 20px;
@@ -65,7 +66,7 @@
    background-color: #141414;
    color: #999;
    margin-block-start: 16px;
-   min-height: 163px;
+   /* min-height: 163px; */
    resize: vertical;
 }
 .form-streem__input-textarea textarea:focus {
@@ -73,23 +74,17 @@
    border: 1px solid #a53dff;
 }
 .form-streem__footer {
-   padding: 20px;
    display: flex;
    justify-content: space-between;
    align-items: center;
+   column-gap: 70px;
 }
 
-.form-streem__footer label {
-   color: #999;
-}
-.checkbox input[type="checkbox"] {
-   position: absolute;
-   opacity: 0;
-   cursor: pointer;
-}
 .checkbox {
-   display: inline-flex;
+   display: flex;
    align-items: center;
+   justify-content: flex-start;
+   flex-basis: 480px;
    cursor: pointer;
 }
 .checkbox__checkmark {
@@ -99,34 +94,30 @@
    border: 1px solid #262626;
    background-color: #0f0f0f;
    display: inline-block;
-   margin-right: 10px;
+   cursor: pointer;
+   margin-right: 8px;
    transition:
       background-color 0.3s ease,
       border-color 0.3s ease;
 }
+.checkbox .checkbox__lable {
+   color: #999;
+   cursor: pointer;
+}
+.checkbox input[type="checkbox"] {
+   display: none;
+}
+
 .checkbox input[type="checkbox"]:checked + .checkbox__checkmark {
    background-color: #a53dff;
    border-color: #a53dff;
 }
-/* .checkbox__checkmark::after {
-   content: "";
-   display: none;
-   position: absolute;
-   width: 5px;
-   height: 10px;
-   border: solid white;
-   border-width: 0 2px 2px 0;
-   transform: rotate(45deg);
-   left: 7px;
-   top: 3px;
-} */
-.checkbox input[type="checkbox"]:checked + .checkbox__checkmark::after {
-   display: inline-block;
-}
+
 .form-streem__footer button {
    max-width: 173px;
    max-height: 63px;
-   padding: 18px 24px;
+   font-size: 14px;
+   padding: 14px 20px;
    border-radius: 8px;
    background-color: #e50000;
    font-weight: 600;
