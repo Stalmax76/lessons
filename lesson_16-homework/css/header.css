@@ -1,0 +1,157 @@
+.header {
+   padding-block: 16px;
+}
+
+.header__container {
+   display: flex;
+   align-items: center;
+   column-gap: 25px;
+   justify-content: space-between;
+}
+
+.header__logo {
+   align-self: flex-start;
+   flex-basis: 152px;
+   position: relative;
+   z-index: 5;
+}
+
+.header__actions {
+   align-self: flex-start;
+   display: flex;
+   position: relative;
+   column-gap: 20px;
+   z-index: 5;
+   flex-basis: 60px;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   column-gap: 14px;
+}
+.logo__img {
+   flex-basis: 48px;
+}
+.logo__img img {
+   max-width: 100%;
+   object-fit: contain;
+   aspect-ratio: 1/1;
+}
+
+.logo__text {
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 1.33;
+}
+
+.menu__list {
+   display: flex;
+   align-items: center;
+   column-gap: 82px;
+   flex-wrap: wrap;
+   row-gap: 10px;
+}
+.menu__link {
+   transition: text-decoration 0.3s ease 0.1s;
+}
+
+.menu__item {
+   line-height: 2;
+}
+
+@media (any-hover: hover) {
+   .menu__link:hover {
+      text-decoration: underline;
+   }
+   .button:hover {
+      border-color: #fff;
+      background-color: #0b0d2b;
+   }
+}
+@media (max-width: 992px) {
+   .header__icon {
+      flex-basis: 48px;
+      height: 46px;
+      flex-shrink: 0;
+   }
+   .icon-menu {
+      display: flex;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 6px;
+      padding: 12px;
+      justify-content: center;
+      align-items: center;
+   }
+   .icon-menu__button {
+      display: flex;
+      flex-basis: 24px;
+      flex-shrink: 0;
+      flex-direction: column;
+   }
+   .icon-menu__button span {
+      margin-block: 6px;
+   }
+
+   .icon-menu__button span,
+   .icon-menu__button::before,
+   .icon-menu__button::after {
+      content: "";
+      transition: all 0.3s ease 0s;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+   }
+   .open-menu .icon-menu__button span {
+      width: 0;
+      height: 0;
+      margin: 0;
+   }
+   .open-menu .icon-menu__button::before {
+      transform: rotate(-45deg) translateY(1.5px);
+   }
+   .open-menu .icon-menu__button::after {
+      transform: rotate(45deg) translateY(-1.5px);
+   }
+   .menu__body {
+      position: fixed;
+      inset-inline-start: 100%;
+      inset-block-start: 0;
+      inline-size: 100%;
+      block-size: 50%;
+      z-index: 2;
+      background-color: #0f0f0f;
+      padding: 100px 15px 30px;
+      overflow: auto;
+      transition: inset-inline-start 0.3s;
+   }
+
+   .menu__body::before {
+      content: "";
+      position: fixed;
+      block-size: 80px;
+      inset-inline-start: 100%;
+      inset-block-start: 0;
+      inline-size: 100%;
+      z-index: 3;
+      background-color: #0f0f0f;
+   }
+   .open-menu .menu__body,
+   .open-menu .menu__body::before {
+      inset-inline-start: 0;
+   }
+   .menu__list {
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-start;
+      row-gap: 30px;
+      font-size: 24px;
+      padding-inline-end: 20px;
+   }
+}
+
+@media (max-width: 460px) {
+   .header__button {
+      display: none;
+   }
+}
