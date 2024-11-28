@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Lesson 17 </title>
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+
+   <body>
+      <div class="wrapper">
+         <header class="header">
+            <div class="header__container">
+               <h1 class="header__title title"> Home-task 17 (Flex and Grid)</h1>
+            </div>
+         </header>
+         <main class="main">
+            <div class="portfolio">
+               <div class="portfolio__container">
+                  <div class="portfolio__header page-header">
+                     <div class="page-header__lable">Portfolio</div>
+                     <h2 class="page-header__title">Flex-adaptive</h2>
+
+                     <select class="portfolio__select" name="portfolio-select">
+                        <option class="portfolio__option" value="Show All"> ShowAll</option>
+                        <option class="portfolio__option" value="design">Design</option>
+                        <option class="portfolio__option" value="branding">Branding</option>
+                        <option class="portfolio__option" value="illustration">Illustration</option>
+                        <option class="portfolio__option" value="motion">Motion</option>
+
+                     </select>
+
+                     <ul class="tabs">
+                        <li class="tabs__item tabs__item--active">Show All <sup>14</sup></li>
+                        <li class="tabs__item">Design <sup>6</sup></li>
+                        <li class="tabs__item">Branding <sup>4</sup></li>
+                        <li class="tabs__item">Illustration <sup>3</sup></li>
+                        <li class="tabs__item">Motion <sup>1</sup></li>
+
+                     </ul>
+                  </div>
+                  <div class="portfolio__cards">
+                     <a href="#" class="portfolio__card card-portfolio">
+
+                        <picture>
+                           <img
+                              srcset="img/portfolio/01_01.webp 1.5x, img/portfolio/01_2x.webp 2x, img/portfolio/01_3x.webp 3x, img/portfolio/01_4x.webp 4x"
+                              src="img/portfolio/01.webp" alt="sofa">
+                        </picture>
+                        <div class="card-portfolio__content">
+                           <div class="card-portfolio__category">Design</div>
+                           <div class="card-portfolio__title">SOFA</div>
+                        </div>
+
+                     </a>
+                     <a href="#" class="portfolio__card card-portfolio">
+                        <img
+                           srcset="img/portfolio/02_02.webp 1.5x, img/portfolio/02_2x.webp 2x, img/portfolio/02_3x.webp 3x, img/portfolio/02_4x.webp 4x"
+                           src="img/portfolio/02.webp" alt="KeyBoard">
+                        <div class="card-portfolio__content">
+                           <div class="card-portfolio__category">Branding</div>
+                           <div class="card-portfolio__title">KeyBoard</div>
+                        </div>
+
+                     </a>
+                     <a href="#" class="portfolio__card card-portfolio">
+                        <img
+                           srcset="img/portfolio/03_03.webp 1.5x, img/portfolio/03_2x.webp 2x, img/portfolio/03_3x.webp 3x, img/portfolio/03_4x.webp 4x"
+                           src="img/portfolio/03.webp" alt="Work Media image ">
+                        <div class="card-portfolio__content">
+                           <div class="card-portfolio__category">Illustration</div>
+                           <div class="card-portfolio__title">Work Media</div>
+                        </div>
+
+                     </a>
+                     <a href="#" class="portfolio__card card-portfolio">
+                        <img
+                           srcset="img/portfolio/04_04.webp 1.5x, img/portfolio/04_2x.webp 2x, img/portfolio/04_3x.webp 3x, img/portfolio/04_4x.webp 4x"
+                           src="img/portfolio/04.webp" alt="sofa">
+                        <div class="card-portfolio__content">
+                           <div class="card-portfolio__category">Motion</div>
+                           <div class="card-portfolio__title">DDDone</div>
+                        </div>
+                     </a>
+
+                  </div>
+                  <a href="#" class="portfolio__button main-button main-button--center"><span>Explore More</span></a>
+               </div>
+            </div>
+            <div class="grid">
+               <div class="grid__container">
+                  <div class="grid__header page-header">
+                     <div class="page-header__lable">Grid layout</div>
+                     <h2 class="page-header__title">Grid-adaptive</h2>
+
+                     <select class="grid__select" name="grid-select">
+                        <option class="grid__option" value="Show All"> ShowAll</option>
+                        <option class="grid__option" value="design">Design</option>
+                        <option class="grid__option" value="branding">Branding</option>
+                        <option class="grid__option" value="illustration">Illustration</option>
+                        <option class="grid__option" value="motion">Motion</option>
+
+                     </select>
+
+                     <ul class="grid__tabs tabs-grid">
+                        <li class="tabs-grid__item tabs-grid__item--active">Show All <sup>14</sup></li>
+                        <li class="tabs-grid__item">Design <sup>6</sup></li>
+                        <li class="tabs-grid__item">Branding <sup>4</sup></li>
+                        <li class="tabs-grid__item">Illustration <sup>3</sup></li>
+                        <li class="tabs-grid__item">Motion <sup>1</sup></li>
+                     </ul>
+
+
+                  </div>
+                  <div class="grid__cards">
+                     <a href="#" class="grid__card card-grid ">
+
+                        <img
+                           srcset="img/portfolio/01_01.webp 1.5x, img/portfolio/01_2x.webp 2x, img/portfolio/01_3x.webp 3x, img/portfolio/01_4x.webp 4x"
+                           src="img/portfolio/01.webp" alt="sofa">
+                        <div class="card-grid__content">
+                           <div class="card-grid__category">Design</div>
+                           <div class="card-grid__title">SOFA</div>
+                        </div>
+
+                     </a>
+                     <a href="#" class="grid__card card-grid ">
+                        <img
+                           srcset="img/portfolio/02_02.webp 1.5x, img/portfolio/02_2x.webp 2x, img/portfolio/02_3x.webp 3x, img/portfolio/02_4x.webp 4x"
+                           src="img/portfolio/02.webp" alt="KeyBoard">
+                        <div class="card-grid__content">
+                           <div class="card-grid__category">Branding</div>
+                           <div class="card-grid__title">KeyBoard</div>
+                        </div>
+
+                     </a>
+                     <a href="#" class="grid__card card-grid">
+                        <img
+                           srcset="img/portfolio/03_03.webp 1.5x, img/portfolio/03_2x.webp 2x, img/portfolio/03_3x.webp 3x, img/portfolio/03_4x.webp 4x"
+                           src="img/portfolio/03.webp" alt="Work Media image ">
+                        <div class="card-grid__content">
+                           <div class="card-grid__category">Illustration</div>
+                           <div class="card-grid__title">Work Media</div>
+                        </div>
+
+                     </a>
+                     <a href="#" class="grid__card card-grid">
+                        <img
+                           srcset="img/portfolio/04_04.webp 1.5x, img/portfolio/04_2x.webp 2x, img/portfolio/04_3x.webp 3x, img/portfolio/04_4x.webp 4x"
+                           src="img/portfolio/04.webp" alt="sofa">
+                        <div class="card-grid__content">
+                           <div class="card-grid__category">Motion</div>
+                           <div class="card-grid__title">DDDone</div>
+                        </div>
+                     </a>
+                  </div>
+                  <a href="#" class="grid__button main-button main-button--center"><span>Explore More</span></a>
+
+               </div>
+            </div>
+
+            <div class="portfolio portfolio--white">
+               <div class="portfolio__container">
+                  <div class="portfolio__header ">
+                     <select class="portfolio__select" name="portfolio-select">
+                        <option class="portfolio__option" value="Show All"> ShowAll</option>
+                        <option class="portfolio__option" value="design">Design</option>
+                        <option class="portfolio__option" value="branding">Branding</option>
+                        <option class="portfolio__option" value="illustration">Illustration</option>
+                        <option class="portfolio__option" value="motion">Motion</option>
+                     </select>
+
+
+                     <ul class="tabs">
+                        <li class="tabs__item tabs__item--active">Show All <sup>14</sup></li>
+                        <li class="tabs__item">Design <sup>6</sup></li>
+                        <li class="tabs__item">Branding <sup>4</sup></li>
+                        <li class="tabs__item">Illustration <sup>3</sup></li>
+                        <li class="tabs__item">Motion <sup>1</sup></li>
+                     </ul>
+                  </div>
+
+                  <div class="portfolio__cards portfolio__cards--white">
+                     <a href="#" class="portfolio__card card-portfolio">
+                        <img
+                           srcset="img/portfolio/02_02.webp 1.5x, img/portfolio/02_2x.webp 2x, img/portfolio/02_3x.webp 3x, img/portfolio/02_4x.webp 4x"
+                           src="img/portfolio/02.webp" alt="sofa">
+                        <div class="card-portfolio__content">
+                           <div class="card-portfolio__category">Branding</div>
+                           <div class="card-portfolio__title">KeyBoard</div>
+                        </div>
+
+                     </a>
+                     <a href="#" class="portfolio__card card-portfolio">
+                        <img
+                           srcset="img/portfolio/01_01.webp 1.5x, img/portfolio/01_2x.webp 2x, img/portfolio/01_3x.webp 3x, img/portfolio/01_4x.webp 4x"
+                           src="img/portfolio/01.webp" alt="KeyBoard">
+                        <div class="card-portfolio__content">
+                           <div class="card-portfolio__category">Design</div>
+                           <div class="card-portfolio__title">SOFA</div>
+                        </div>
+
+                     </a>
+                     <a href="#" class="portfolio__card card-portfolio">
+                        <img
+                           srcset="img/portfolio/03_03.webp 1.5x, img/portfolio/03_2x.webp 2x, img/portfolio/03_3x.webp 3x, img/portfolio/03_4x.webp 4x"
+                           src="img/portfolio/03.webp" alt="Work Media image ">
+                        <div class="card-portfolio__content">
+                           <div class="card-portfolio__category">Illustration</div>
+                           <div class="card-portfolio__title">Work Media</div>
+                        </div>
+
+                     </a>
+                     <a href="#" class="portfolio__card card-portfolio">
+                        <img
+                           srcset="img/portfolio/04_04.webp 1.5x, img/portfolio/04_2x.webp 2x, img/portfolio/04_3x.webp 3x, img/portfolio/04_4x.webp 4x"
+                           src="img/portfolio/04.webp" alt="sofa">
+                        <div class="card-portfolio__content">
+                           <div class="card-portfolio__category">Motion</div>
+                           <div class="card-portfolio__title">DDDone</div>
+                        </div>
+                     </a>
+                     <a href="#" class="portfolio__card card-portfolio">
+                        <img
+                           srcset="img/portfolio/05_05.webp 1.5x, img/portfolio/05_2x.webp 2x, img/portfolio/05_3x.webp 3x, img/portfolio/05_4x.webp 4x"
+                           src="img/portfolio/05.webp" alt="HandP">
+                        <div class="card-portfolio__content">
+                           <div class="card-portfolio__category">Branding</div>
+                           <div class="card-portfolio__title">HandP</div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="portfolio__buttons">
+                     <button class="portfolio__button">1</button>
+                     <button class="portfolio__button">2</button>
+                     <button class="portfolio__button">3</button>
+                     <button class="portfolio__button">4</button>
+                     <button class="portfolio__button">5</button>
+                  </div>
+               </div>
+
+
+            </div>
+
+
+         </main>
+         <footer class="footer">
+            <div class="footer__container">
+            </div>
+         </footer>
+      </div>
+   </body>
+
+</html>
