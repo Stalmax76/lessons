@@ -1,0 +1,33 @@
+@import "reset.css";
+@import "fonts.css";
+@import "grid-header.css";
+@import "grid-practics.css";
+
+/* common */
+.wrapper {
+   font-family: "Epilogue", sans-serif, Arial, Helvetica, sans-serif;
+   min-height: 100%;
+   overflow: clip;
+   display: flex;
+   flex-direction: column;
+   font-size: 16px;
+   font-weight: 400;
+   background-color: #28293e;
+   color: #ffffff;
+}
+.wrapper > main {
+   flex-grow: 1;
+}
+[class*="__container"] {
+   max-width: 1376px;
+   margin-inline: auto;
+   padding-inline: 15px;
+}
+
+/*   ============= mobil ============= */
+@media (max-width: 767.98px) {
+   [class*="__container"] {
+      max-width: none;
+      padding-inline: 10px;
+   }
+}

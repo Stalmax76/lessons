@@ -1,0 +1,31 @@
+@import "reset.css";
+@import "fonts.css";
+@import "common.css";
+@import "header.css";
+@import "introduce.css";
+@import "advice.css";
+@import "advertising.css";
+@import "price.css";
+@import "footer.css";
+
+/* common */
+.wrapper {
+   font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
+   min-height: 100%;
+   box-sizing: border-box;
+   overflow: clip;
+   display: flex;
+   flex-direction: column;
+   font-size: 16px;
+   font-weight: 400;
+   background-color: #fff;
+   color: #091133;
+}
+.wrapper > main {
+   flex-grow: 1;
+}
+[class*="__container"] {
+   max-width: 1140px;
+   margin-inline: auto;
+   padding-inline: 15px;
+}

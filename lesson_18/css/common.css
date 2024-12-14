@@ -1,0 +1,73 @@
+.page-header__title {
+   font-size: 36px;
+   font-weight: 500;
+   line-height: 1.33; /* 48/36 */
+   color: #091133;
+   margin-block-end: 16px;
+}
+.page-header__text {
+   font-size: 18px;
+   line-height: 1.66; /* 24/16 */
+   color: #6f7cb2;
+}
+.page-header__text p:not(:last-child) {
+   margin-block-end: 16px;
+}
+.page-header__buttons {
+   display: flex;
+   gap: 30px;
+}
+
+.button {
+   color: #fff;
+   font-size: 12px;
+   font-weight: 500;
+   line-height: 1.5;
+   border-radius: 2px;
+   background-color: #111b47;
+   padding-block: 4px 3px;
+   inline-size: 160px;
+   transition:
+      background-color 0.3s,
+      color 0.3s;
+}
+
+.button:hover {
+   background-color: #c4b3b3;
+   color: #111b47;
+}
+.button--secondary {
+   background-color: #fff;
+   color: #091133;
+   border: 2px solid #091133;
+}
+.button--secondary:hover {
+   background-color: #091133;
+   color: #fff;
+}
+.button.button--link {
+   color: #37447e;
+   line-height: 1.62;
+   background-color: #fff;
+}
+.button.button--link:hover {
+   color: #1f284b;
+   text-decoration: underline;
+   background-color: #fff;
+}
+@media (any-hover: hover) {
+   .button:hover {
+      background-color: #c4b3b3;
+      color: #111b47;
+   }
+   .button--secondary:hover {
+      background-color: #091133;
+      color: #fff;
+   }
+}
+
+@media (max-width: 767.98px) {
+   .button {
+      font-size: 20px;
+   }
+}
