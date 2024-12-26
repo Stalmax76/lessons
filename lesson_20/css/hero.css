@@ -1,0 +1,140 @@
+.hero {
+   padding-block: 7.875rem 13.875rem;
+   background-color: #f0f1f3;
+}
+
+.hero__container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 8.5rem;
+}
+.hero__content {
+   flex: 1 1 40.3125rem;
+}
+.content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   row-gap: 142px;
+}
+
+.content__hat.hat {
+   row-gap: 1.5rem;
+}
+.info {
+   display: flex;
+   gap: 0.1875rem;
+   align-items: center;
+   justify-content: center;
+}
+.info__item {
+   flex-basis: 12.5rem;
+}
+
+.item-info {
+   text-align: center;
+   padding: 1.0625rem 0.75rem;
+   flex-shrink: 1;
+   flex-grow: 1;
+   background-color: rgba(237, 216, 255, 0.5);
+}
+.item-info__title {
+   margin-block-end: 0.5rem;
+}
+.item-info__label {
+   color: var(--colorGreyLabel);
+   line-height: 1.5;
+   font-size: 1rem;
+}
+
+.hero__image {
+   margin-top: -3.25rem;
+   height: 100%;
+   overflow: hidden;
+   flex-basis: 33.5rem;
+   border-radius: 1.5625rem;
+   flex-grow: 1;
+   flex-shrink: 1;
+   position: relative;
+   aspect-ratio: 536 / 636;
+   box-shadow: 0rem 1.5rem 7.25rem 0rem rgba(43, 56, 76, 0.09);
+}
+
+.hero__image img {
+   width: 100%;
+   object-fit: cover;
+   position: relative;
+   height: 138%;
+   top: -16.2%;
+   left: 0;
+}
+
+@media (max-width: 76.76em) {
+   .hero__container {
+      gap: 6.5rem;
+   }
+   .hero {
+      padding-block: 5.875rem 9.875rem;
+   }
+   .content {
+      row-gap: 3.875rem;
+   }
+   .item-info {
+      padding: 1rem 0.5rem;
+   }
+}
+
+@media (max-width: 62em) {
+   .hero {
+      padding-block: 3.875rem 4.875rem;
+   }
+   .hero__container {
+      flex-direction: column;
+      gap: 2rem;
+   }
+
+   .hero__content {
+      flex: 1 1 auto;
+   }
+
+   .content__hat {
+      max-width: 60%;
+      margin-inline: auto;
+   }
+   .hero__image {
+      margin-top: 0rem;
+   }
+}
+
+@media (max-width: 49em) {
+   .hero {
+      padding-block: 2rem 2rem;
+   }
+   .content__hat {
+      max-width: 80%;
+   }
+}
+@media (max-width: 44em) {
+   .content__hat {
+      max-width: 90%;
+   }
+}
+@media (max-width: 40em) {
+   .content__hat {
+      max-width: 100%;
+   }
+   .info {
+      flex-wrap: wrap;
+   }
+
+   .hero__image {
+      width: 100%;
+   }
+   .hero__image img {
+      max-height: 100%;
+      max-width: 100%;
+      top: 0;
+      left: 0;
+   }
+}

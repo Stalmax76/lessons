@@ -1,0 +1,107 @@
+.button {
+   font-size: 1rem;
+   font-weight: 600;
+   line-height: 1.5;
+   color: var(--colorWhite);
+   background-color: var(--colorMain);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   column-gap: 12px;
+   border-radius: 4px;
+   padding-inline: 24px;
+   min-height: 48px;
+   transition:
+      background-color 0.3s,
+      color 0.3s,
+      box-shadow 0.3s;
+}
+.button--secondary {
+   background-color: var(--colorWhite);
+   color: var(--colorMain);
+   border: 1px solid var(--colorMain);
+}
+
+.hat {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+.title {
+   color: var(--colorBlackFont);
+   font-size: 2rem;
+   font-weight: 600;
+   line-height: 1.31;
+}
+.title--fz18 {
+   font-size: 1.125rem;
+}
+.title--fz20 {
+   font-size: 1.25rem;
+}
+.title--fz24 {
+   font-size: 1.5rem;
+}
+.title--fz48 {
+   font-size: 3rem;
+}
+.title--fz72 {
+   font-size: 4.5rem;
+   line-height: 1.16;
+}
+.text {
+   line-height: 1.33;
+}
+.text p:not(:last-child) {
+   margin-block-end: 1rem;
+}
+.text strong {
+   color: var(--colorBlackFont);
+}
+.hat__buttons {
+   display: flex;
+   column-gap: 16px;
+   align-items: center;
+}
+
+@media (any-hover: hover) {
+   .button:hover {
+      background-color: var(--colorGrey);
+      color: var(--colorMain);
+      box-shadow: 0.125rem 0.125rem 0.3125rem var(--colorMain);
+   }
+   .button--secondary:hover {
+      background-color: var(--colorMain);
+      color: var(--colorWhite);
+   }
+   .button--secondary:hover svg path {
+      fill: var(--colorWhite);
+   }
+}
+@media (max-width: 75em) {
+   /* .title {
+      font-size: 1.8rem;
+   } */
+   .title--fz72 {
+      font-size: 4.25rem;
+   }
+}
+@media (max-width: 45em) {
+   .button {
+      font-size: 18px;
+      padding: 10px 20px;
+   }
+}
+
+@media (max-width: 30em) {
+   .title {
+      font-size: 1.5rem;
+   }
+   .title--fz72 {
+      font-size: 3.5rem;
+   }
+   .title--fz48 {
+      font-size: 2.5rem;
+   }
+}

@@ -1,0 +1,19 @@
+:root {
+   --colorMain: #a53dff;
+   --colorBlackFont: #132238;
+   --colorBlackMenu: #333;
+   --colorBlackText: #556070;
+   --colorBlackCardTitle: #556070;
+   --colorWhite: #fff;
+   --colorGrey: rgba(237, 216, 255, 0.7);
+   --colorGreyLabel: #697484;
+   --colorWhiteBackground: #f0f1f3;
+   --colorLabelPortfolioCard: #87909d;
+   --colorGrayTextIdia: #a5acb5;
+   --colorPaginationButton: #c3c7ce;
+   --colorPaginationButtonActive: #210c33;
+   --colorTextWhat: #424e60;
+   --colorBgHappy: #e6e8eb;
+   --colorTextTestimonial: #2b384c;
+   --colorLabel: #a53dff;
+}

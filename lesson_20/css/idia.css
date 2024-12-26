@@ -1,0 +1,54 @@
+@import "variables.css";
+.idia {
+   background-color: var(--colorBlackFont);
+   color: var(--colorWhite);
+   padding-block: 6.25rem;
+}
+.idia__container {
+   inline-size: 40.6875rem;
+}
+
+.idia__hat {
+   text-align: center;
+}
+.idia__hat .hat__title {
+   inline-size: 100%;
+   color: var(--colorWhite);
+   line-height: 1.16;
+}
+.idea__hat .hat__text {
+   color: var(--colorGrayTextIdia);
+}
+.idia__hat .idia__buttons {
+   max-width: 15rem;
+   margin-inline: auto;
+}
+.idia__buttons .button {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   column-gap: 0.75rem;
+}
+@media (max-width: 76.76em) {
+   .idia {
+      padding-block: 5rem;
+   }
+}
+@media (max-width: 64em) {
+   .idia {
+      padding-block: 3.75rem;
+   }
+}
+@media (max-width: 48em) {
+   .idia {
+      padding-block: 2.5rem;
+   }
+   .idia__container {
+      inline-size: 100%;
+   }
+
+   .idia__hat .idia__buttons {
+      max-width: 100%;
+   }
+}
