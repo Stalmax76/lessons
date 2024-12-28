@@ -59,6 +59,7 @@
 .social-footer__item img {
    width: 100%;
    object-fit: cover;
+   transition: all 0.3s ease 0s;
 }
 .social-footer__item:hover img {
    transform: scale(1.2);
