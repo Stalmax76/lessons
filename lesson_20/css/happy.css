@@ -1,3 +1,4 @@
+@import "variables.css";
 .happy {
    padding-block: 6.25rem;
    background-color: var(--colorWhite);
@@ -40,9 +41,6 @@
    aspect-ratio: 1 / 1;
    transition: all 0.3s;
    /* background-color: lightcoral; */
-}
-.happy__item--active svg path {
-   fill: var(--colorBlackFont);
 }
 
 .item-linkedin svg path:last-child {

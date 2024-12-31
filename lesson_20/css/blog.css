@@ -40,36 +40,35 @@
    padding-block-end: 1.5rem;
    border-radius: 0.5rem;
    transition: all 0.3s;
+   background-color: #fff;
 }
-.slider__item-blog--active {
+/* .slider__item-blog--active {
    border-radius: 0.5rem;
    border: 1px solid var(--colorWhiteBackgroun);
    background-color: var(--colorWhite);
 
    box-shadow: 0rem 0.75rem 4rem 0rem rgba(28, 25, 25, 0.12);
-}
-.slider__item-blog:hover:not(.slider__item-blog--active) {
-   border-radius: 0.5rem;
-   border: 0.0625rem solid var(--colorWhiteBackgroun);
-   background-color: var(--colorWhite);
-   box-shadow: 0rem 0.75rem 4rem 0rem rgba(28, 25, 25, 0.12);
-}
+} */
 
 .slider__img {
    aspect-ratio: 312 / 226;
+   flex: 1 1 226px;
+   border-radius: 0.5rem 0.5rem 0 0;
+   overflow: hidden;
 }
 .slider__img img {
    width: 100%;
    object-fit: cover;
-   border-radius: 0.5rem 0.5rem 0 0;
 }
 .slider__content {
+   flex: 1 1 220px;
    display: flex;
    flex-direction: column;
    gap: 0.5rem;
    border-radius: 0 0 0.5rem 0.5rem;
    background-color: var(--colorWhiteBackground);
    padding-inline: 1.5rem;
+   text-align: left;
 }
 .content-slider__date {
    display: flex;
@@ -84,6 +83,7 @@
    text-align: left;
    line-height: 1.33;
    color: var(--colorBlackMenu);
+   flex: 1 1 48px;
 }
 
 .slider__pagination-list {
@@ -100,14 +100,23 @@
    cursor: pointer;
    transition: all 0.3s;
 }
-.slider__pagination-link:hover:not(.slider__pagination-link--active) {
-   background-color: var(--colorMain);
-   transform: scale(1.2);
-}
-.slider__pagination-link--active {
-   width: 1.875rem;
-   border-radius: 6.25rem;
-   background-color: var(--colorPaginationButtonActive);
+
+@media (any-hover: hover) {
+   .slider__item-blog:hover:not(.slider__item-blog--active) {
+      border-radius: 0.5rem;
+      border: 0.0625rem solid var(--colorWhiteBackgroun);
+      background-color: var(--colorWhite);
+      box-shadow: 0rem 0.75rem 4rem 0rem rgba(28, 25, 25, 0.12);
+   }
+   .slider__pagination-link:hover {
+      width: 1.875rem;
+      border-radius: 6.25rem;
+      background-color: var(--colorPaginationButtonActive);
+   }
+   /* .slider__pagination-link:hover:not(.slider__pagination-link--active) {
+      background-color: var(--colorMain);
+      transform: scale(1.2);
+   } */
 }
 
 @media (max-width: 76.76em) {

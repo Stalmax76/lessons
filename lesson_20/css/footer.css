@@ -1,4 +1,4 @@
-@import "variebles.css";
+@import "variables.css";
 .footer {
    background-color: #132238;
    padding-block: 10rem 3.125rem;
@@ -37,6 +37,7 @@
    row-gap: 1rem;
    column-gap: 1.5rem;
    flex-wrap: wrap;
+   justify-content: center;
 }
 .footer__menu .menu-footer__item {
    color: var(--colorWhiteBackground);
