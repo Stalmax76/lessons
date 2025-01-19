@@ -1,0 +1,14 @@
+@use "sass:math";
+
+@function toRem($px) {
+   @return math.div($px, 16) + rem;
+}
+@function toEm($px) {
+   @return math.div($px, 16) + em;
+}
+@function percent($val1, $val2) {
+   @if $val2 == 0 {
+      @error "Cannot divide by zero in percent function.";
+   }
+   @return math.div($val1, $val2) * 100%;
+}

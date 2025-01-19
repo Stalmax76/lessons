@@ -1,0 +1,125 @@
+.main--search {
+   .hero {
+      .search-hero {
+         justify-content: center;
+         padding-block-end: toRem(22);
+         border-bottom: 1px solid rgba(4, 33, 21, 0.2);
+         &__input {
+            font-size: toRem(16);
+            padding-block: toRem(10);
+         }
+
+         &__button {
+            align-self: center;
+            background-color: transparent;
+            flex-basis: toRem(50);
+            max-height: toRem(82);
+
+            img {
+               aspect-ratio: auto;
+            }
+         }
+         & ._active {
+            img {
+               filter: invert(1);
+            }
+         }
+      }
+
+      &__body {
+         padding-block-start: toRem(18);
+      }
+   }
+   .body-hero {
+      &__items {
+         padding-block: toRem(20) toRem(10);
+         display: grid;
+         grid-template-columns: repeat(auto-fill, minmax(toRem(153), 1fr));
+         column-gap: toRem(30);
+         row-gap: toRem(20);
+         justify-items: center;
+         grid-auto-flow: row dense;
+         @media (max-width: 23.375em) {
+            column-gap: toRem(10);
+            row-gap: toRem(15);
+         }
+      }
+
+      &__item {
+         display: flex;
+         flex-direction: column;
+         row-gap: toRem(7);
+      }
+
+      &__img {
+         position: relative;
+         flex-shrink: 1;
+         flex-grow: 1;
+         flex-basis: toRem(224);
+         border-radius: toRem(25);
+         overflow: hidden;
+         aspect-ratio: 153 / 223;
+         &::before {
+            content: "";
+            position: absolute;
+            right: 6px;
+            bottom: 10px;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            background-color: #fff;
+            z-index: 5;
+            filter: blure(5px);
+            overflow: hidden;
+         }
+         &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            transform: translate(-50%, -50%);
+            width: 18px;
+            height: 18px;
+            background-image: url("../../img/icons/Heart.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: 6;
+         }
+         img {
+            width: 100%;
+            object-fit: cover;
+         }
+      }
+
+      &__info {
+         flex-grow: 1;
+         flex-basis: 56px;
+         flex-shrink: 0;
+         padding-inline-start: toRem(12);
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         justify-content: center;
+         row-gap: toRem(7);
+         color: $black;
+         font-family: $main-font;
+      }
+
+      &__size {
+         font-size: toRem(12);
+         letter-spacing: toRem(0.42);
+         line-height: 1.02;
+      }
+
+      &__title {
+         font-size: toRem(16);
+         font-weight: 700;
+      }
+
+      &__price {
+         font-size: toRem(14);
+         letter-spacing: toRem(0.42);
+         line-height: 1.02;
+      }
+   }
+}

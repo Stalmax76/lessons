@@ -1,0 +1,28 @@
+@import "_reset";
+@import "_fonts";
+@import "utils/_variables";
+@import "utils/_functions";
+@import "components/_common";
+@import "components/_header";
+@import "components/_hero";
+@import "components/_products";
+@import "components/_main--search";
+
+body {
+   font-family: $main-font;
+}
+.wrapper {
+   min-height: 100vw;
+   overflow: clip;
+   display: flex;
+   flex-direction: column;
+
+   .main {
+      flex-grow: 1;
+   }
+}
+[class*="__container"] {
+   max-width: $maxWidth;
+   margin: 0 auto;
+   padding: 0 toRem(15);
+}

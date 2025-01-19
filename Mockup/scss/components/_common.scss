@@ -1,0 +1,86 @@
+// ----------- button -----------
+.button {
+   font-family: $second-font;
+   font-weight: 700;
+   font-size: toRem(20);
+   line-height: normal;
+   text-transform: uppercase;
+   color: $white; /* #FFFFFF */
+   background-color: $backgroundBtn;
+   border-radius: toRem(25);
+   padding: toRem(8) toRem(20);
+   text-transform: uppercase;
+   cursor: pointer;
+}
+// title
+.title {
+   font-size: toRem(24);
+   line-height: 1.7; /* 41/24 */
+   &--product {
+      font-size: toRem(30);
+      font-weight: 700;
+      line-height: 1.02;
+      letter-spacing: 1.05px;
+   }
+}
+
+// ----------- logo -----------
+.logo {
+   font-family: $main-font;
+   border: 0.5px solid rgba(0, 0, 0, 0.9);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1px;
+   width: 100px;
+   max-height: 44px;
+
+   span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: hsla(0, 0%, 0%, 0.8);
+      flex: 0 1 16.6%;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: normal;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+   }
+}
+// ----------- modal -----------
+.modal {
+   width: 92%;
+   padding-block: toRem(24) toRem(17);
+   padding-inline: toRem(24);
+   border-radius: toRem(25);
+   box-shadow: 0px -3px 25px 5px rgba(0, 88, 171, 0.07);
+   background-color: $white;
+   margin-inline: auto;
+   &__container {
+   }
+
+   &__actions {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__icon {
+      img {
+         width: 100%;
+         object-fit: cover;
+      }
+      &-home {
+         display: inline-flex;
+         align-items: center;
+         column-gap: toRem(6);
+         padding-block-end: toRem(17);
+         border-bottom: 2px solid $black;
+         span {
+            align-self: flex-end;
+         }
+      }
+   }
+}

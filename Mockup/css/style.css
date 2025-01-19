@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,regular,500,600,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Karla:regular,700&display=swap");
 *,
 *::before,
 *::after {
@@ -78,6 +79,20 @@ textarea {
 table {
   inline-size: 100%;
   border-collapse: collapse;
+}
+
+.button {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #fff; /* #FFFFFF */
+  background-color: #364d44;
+  border-radius: 1.5625rem;
+  padding: 0.5rem 1.25rem;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .title {
@@ -206,6 +221,10 @@ table {
   -webkit-column-gap: 1.5rem;
      -moz-column-gap: 1.5rem;
           column-gap: 1.5rem;
+}
+.header--search .header__actions {
+  -webkit-padding-end: 1.875rem;
+          padding-inline-end: 1.875rem;
 }
 
 .actions__item {
@@ -382,6 +401,155 @@ table {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.main--search .hero .search-hero {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-padding-after: 1.375rem;
+          padding-block-end: 1.375rem;
+  border-bottom: 1px solid rgba(4, 33, 21, 0.2);
+}
+.main--search .hero .search-hero__input {
+  font-size: 1rem;
+  padding-block: 0.625rem;
+}
+.main--search .hero .search-hero__button {
+  -ms-flex-item-align: center;
+      align-self: center;
+  background-color: transparent;
+  -ms-flex-preferred-size: 3.125rem;
+      flex-basis: 3.125rem;
+  max-height: 5.125rem;
+}
+.main--search .hero .search-hero__button img {
+  aspect-ratio: auto;
+}
+.main--search .hero .search-hero ._active img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+.main--search .hero__body {
+  -webkit-padding-before: 1.125rem;
+          padding-block-start: 1.125rem;
+}
+.main--search .body-hero__items {
+  padding-block: 1.25rem 0.625rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9.5625rem, 1fr));
+  -webkit-column-gap: 1.875rem;
+     -moz-column-gap: 1.875rem;
+          column-gap: 1.875rem;
+  row-gap: 1.25rem;
+  justify-items: center;
+  grid-auto-flow: row dense;
+}
+@media (max-width: 23.375em) {
+  .main--search .body-hero__items {
+    -webkit-column-gap: 0.625rem;
+       -moz-column-gap: 0.625rem;
+            column-gap: 0.625rem;
+    row-gap: 0.9375rem;
+  }
+}
+.main--search .body-hero__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 0.4375rem;
+}
+.main--search .body-hero__img {
+  position: relative;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 14rem;
+      flex-basis: 14rem;
+  border-radius: 1.5625rem;
+  overflow: hidden;
+  aspect-ratio: 153/223;
+}
+.main--search .body-hero__img::before {
+  content: "";
+  position: absolute;
+  right: 6px;
+  bottom: 10px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  z-index: 5;
+  -webkit-filter: blure(5px);
+          filter: blure(5px);
+  overflow: hidden;
+}
+.main--search .body-hero__img::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  background-image: url("../../img/icons/Heart.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 6;
+}
+.main--search .body-hero__img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main--search .body-hero__info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 56px;
+      flex-basis: 56px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-padding-start: 0.75rem;
+          padding-inline-start: 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 0.4375rem;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+.main--search .body-hero__size {
+  font-size: 0.75rem;
+  letter-spacing: 0.02625rem;
+  line-height: 1.02;
+}
+.main--search .body-hero__title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.main--search .body-hero__price {
+  font-size: 0.875rem;
+  letter-spacing: 0.02625rem;
+  line-height: 1.02;
 }
 
 body {

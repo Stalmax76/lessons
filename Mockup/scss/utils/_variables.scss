@@ -1,0 +1,25 @@
+@use "_functions" as *;
+
+// points
+$biggest: toEm(1594);
+$desktop: toEm(1280);
+$tablet: toEm(992);
+$phone-big: toEm(768);
+$phone-mini: toEm(358);
+
+// colors
+$white: #fff;
+$black: #000;
+$orange: #ff6b09;
+$grey: #f1f1f1;
+$dark-grey: #4d4d4d;
+$backgroundBtn: #364d44;
+
+// fonts
+$main-font: "Poppins", sans-serif;
+$second-font: "Karla", sans-serif;
+
+// max-width
+$maxWidth: 1308px;
+// min-width
+$minWidth: 320px;
