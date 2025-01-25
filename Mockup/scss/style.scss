@@ -4,9 +4,11 @@
 @import "utils/_functions";
 @import "components/_common";
 @import "components/_header";
-@import "components/_hero";
+@import "components/_search";
 @import "components/_products";
+@import "components/_footer";
 @import "components/_main--search";
+@import "components/_my-pages";
 
 body {
    font-family: $main-font;
@@ -18,11 +20,17 @@ body {
    flex-direction: column;
 
    .main {
-      flex-grow: 1;
+      // flex-grow: 1;
    }
 }
 [class*="__container"] {
    max-width: $maxWidth;
    margin: 0 auto;
    padding: 0 toRem(15);
+   @media (max-width: $phone) {
+      padding: 0 toRem(10);
+   }
+   @media (max-width: $phone-small) {
+      padding: 0 toRem(5);
+   }
 }

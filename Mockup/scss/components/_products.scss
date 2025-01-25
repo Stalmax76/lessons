@@ -24,29 +24,25 @@
    }
 
    &__link {
-      max-width: toRem(24);
-      max-height: toRem(24);
-      img {
-         width: 100%;
-         object-fit: cover;
-      }
    }
 }
-.title {
-}
-.title--product {
-}
+
 .slider {
    display: flex;
-   justify-content: space-between;
    align-items: center;
    column-gap: toRem(17);
-   overflow: auto;
+   overflow-x: auto;
+   scroll-behavior: smooth;
+   &::-webkit-scrollbar {
+      display: none;
+   }
    &__item {
-      flex: 0 0 153px;
    }
 }
 .item-slider {
+   flex: 0 0 auto;
+   width: 40%;
+   text-align: center;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -63,9 +59,16 @@
       aspect-ratio: 153 / 223;
       border-radius: toRem(25);
       overflow: hidden;
+      transition: transform 0.3s ease;
       img {
          width: 100%;
          object-fit: cover;
+      }
+      @media (any-hover: hover) {
+         &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+         }
       }
    }
 }
